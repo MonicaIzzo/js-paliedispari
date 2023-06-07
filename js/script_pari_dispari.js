@@ -24,21 +24,20 @@ let risult =''
 
 
 //#1 inserisco il pront per il numero da 1 a 5
-number = prompt('Inserisci un numero da 1 a 5');
-console.log(number );
+number = prompt("Inserisci un numero da 1 a 5");
+console.log(number);
 
 //# 1b** Validazione
-
-
-
-//#2 Genero un numero random
+if (number > 5) {
+  number = prompt("Hai inserito un numero maggiore di 5. Inserisci un numero da 1 a 5");
+} else {
+  //#2 Genero un numero random
 numberRandom = Math.floor(Math.random()*100);
-alert(numberRandom);
 
 console.log(numberRandom); 
 
 //#3 Sommo i 2 numeri
-risult = number + numberRandom
+risult = parseInt(number) + parseInt(numberRandom);
 console.log(risult); 
 
 //#4 stabilisco se la somma dei 2 numeri e pari o dispari
@@ -65,3 +64,7 @@ function IsNotUneven(risult)
     {
         alert("Numero pari");
     }
+}
+
+
+
