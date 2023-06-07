@@ -17,22 +17,51 @@
 */
 
 //#0 Mi setto le variabili di comodo.
+let number ='';
+let numberRandom ='';
+let risult =''
 
 
 
 //#1 inserisco il pront per il numero da 1 a 5
+number = prompt('Inserisci un numero da 1 a 5');
+console.log(number );
 
 //# 1b** Validazione
 
 
 
 //#2 Genero un numero random
+numberRandom = Math.floor(Math.random()*100);
+alert(numberRandom);
 
+console.log(numberRandom); 
 
 //#3 Sommo i 2 numeri
-
+risult = number + numberRandom
+console.log(risult); 
 
 //#4 stabilisco se la somma dei 2 numeri e pari o dispari
+function IsNotUneven(risult)
+{
+    if (isNaN(risult) == false)
+    {
+        return (risult %2 == 1 ?  true : false);
+    }
+    else
+    {
+        return null;
+    }
+}
 
 
 //#5 Dichiaro chi ha vinto
+
+    if (IsNotUneven(1))
+    {
+        alert("Numero dispari");
+    }
+    else
+    {
+        alert("Numero pari");
+    }
