@@ -1,17 +1,9 @@
-// #0 dichiaro delle variabili di comodo.
-// #1 Chiedo tramite il consol.log all'utente di inserire una parola.
-// #2 estraggo ciascun carattere e lo inserisco in una variabile.
-// #3 con il ciclo while verifico che la parola presa in input è palindroma.
-// #4 Stampo in consol.log il messaggio.
-// #SE la parola è polindroma, il messaggio sarà: la parola è palindroma.
-// #SE INVECE la parola non è polindroma, il messaggio sarà: la parola non è palindroma.
-
 console.log ('JS OK');
 
 let carattere;
 let parolaInversa = '';
 
-// #0 recupero gli elementi dal DOM.
+// #recupero gli elementi dal DOM.
 
 const parolaField = document.getElementById('parola');
 const button = document.getElementById('BtnPalindroma');

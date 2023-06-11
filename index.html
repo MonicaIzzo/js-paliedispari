@@ -25,7 +25,8 @@
 </head>
     <body>
 <!-- Palindroma -->
-        <section class="m5 p-5 bg-light ">
+<!-- Avrei potuto mettere una classe d-none alla section, è cambiarla via javascript nel caso fosse attivata la versione DOM, ma adesso mi annoio -->
+        <section class="m5 p-5 bg-light">
         <h2>Palindroma</h2>
         <div id="palindroma-form">
         <input type="text" id="parola" required>
@@ -35,16 +36,16 @@
         </section>
 
 <!-- Paridispari -->
+<!-- Avrei potuto mettere una classe d-none alla section, è cambiarla via javascript nel caso fosse attivata la versione DOM, ma adesso mi annoio -->
 <section class="m5 p-5 bg-light">
     <h2>Pari o Dispari</h2>
-    <form id="pariodispari-form">
         <input type="number" id="number">
         <select id="alternative">
             <option value="even">Pari</option>
             <option value="odd">Dispari</option>
         </select>
-        <button type="submit">OK</button>
-    </form>
+        <button type="submit" id="BtnPariDispari">OK</button>
+        <p id="resultNumber"></p>
 </section>
 <!-- script javascript -->
         <!-- <script src="js/script_palidroma.js"></script> -->
