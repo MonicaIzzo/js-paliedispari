@@ -6,16 +6,16 @@
 // #SE la parola è polindroma, il messaggio sarà: la parola è palindroma.
 // #SE INVECE la parola non è polindroma, il messaggio sarà: la parola non è palindroma.
 
-console.log ('JS OK');
+console.log("JS OK");
 
 // #0 dichiaro delle variabili di comodo.
-let parola ='';
+let parola = "";
 let carattere;
-let parolaInversa = '';
+let parolaInversa = "";
 
 // #1 Chiedo tramite il consol.log all'utente di inserire una parola.
-parola = prompt('Inserisci una parola per verificare se e polindroma');
-console.log(parola );
+parola = prompt("Inserisci una parola per verificare se e polindroma");
+console.log(parola);
 
 // #2 estraggo ciascun carattere e lo inserisco in una variabile.
 let i = parola.length - 1;
@@ -31,10 +31,11 @@ while (i >= 0) {
 // #4 Stampo in consol.log il messaggio.
 console.log(parolaInversa);
 
-if(parola == parolaInversa){ // verifico che la condizione sià vera.
-// #SE la parola è polindroma, il messaggio sarà: la parola è palindroma.    
-     alert('BRAVO! la parola inserita è palindroma');
-// #SE INVECE la parola non è polindroma, il messaggio sarà: la parola non è palindroma.    
-  } else {
-     alert('PECCATO! la parola non è palindroma');
-  }
+if (parola == parolaInversa) {
+  // verifico che la condizione sià vera.
+  // #SE la parola è polindroma, il messaggio sarà: la parola è palindroma.
+  alert("BRAVO! la parola inserita è palindroma");
+  // #SE INVECE la parola non è polindroma, il messaggio sarà: la parola non è palindroma.
+} else {
+  alert("PECCATO! la parola non è palindroma");
+}
