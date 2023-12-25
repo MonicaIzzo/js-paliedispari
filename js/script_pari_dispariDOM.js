@@ -9,8 +9,8 @@ let alternative = "";
 
 const numberField = document.getElementById("number");
 const selectField = document.getElementById("alternative");
-const button = document.getElementById("BtnPariDispari");
-const resultElement = document.getElementById("resultNumber");
+const buttonPariDispari = document.getElementById("BtnPariDispari");
+const resultPariDispari = document.getElementById("resultNumber");
 
 function IsEven(number) {
   if (number % 2) return false;
@@ -18,10 +18,10 @@ function IsEven(number) {
 }
 
 // # Metto in ascolto il BOTTONE.
-button.addEventListener("click", function () {
+buttonPariDispari.addEventListener("click", function () {
   const number = parseInt(numberField.value);
   console.log(number);
-  const alternative = resultElement.value;
+  const alternative = resultPariDispari.value;
 
   //# Validazione
   if (number > 5 || isNaN(number) || number < 1) {
@@ -45,6 +45,6 @@ button.addEventListener("click", function () {
   console.log("la somma è: " + risult + ". Ha vinto il " + winner);
 
   //# Stampo il vincitore
-  resultElement.innerText =
+  resultPariDispari.innerText =
     "il numero uscito è il: " + risult + " Ha vinto: " + winner;
 });

@@ -6,10 +6,10 @@ let parolaInversa = "";
 // #recupero gli elementi dal DOM.
 
 const parolaField = document.getElementById("parola");
-const button = document.getElementById("BtnPalindroma");
-const resultElement = document.getElementById("result");
+const buttonPalindroma = document.getElementById("BtnPalindroma");
+const resultPalindroma = document.getElementById("resultWord");
 
-button.addEventListener("click", function () {
+buttonPalindroma.addEventListener("click", function () {
   let parola = parolaField.value.trim();
   console.log(parola);
   let i = parola.length - 1;
@@ -25,11 +25,11 @@ button.addEventListener("click", function () {
   if (parola == parolaInversa) {
     // verifico che la condizione sià vera.
     // #SE la parola è polindroma, il messaggio sarà: la parola è palindroma.
-    resultElement.innerText = "BRAVO! la parola inserita è palindroma";
+    resultPalindroma.innerText = "BRAVO! la parola inserita è palindroma";
     parolaInversa = "";
     // #SE INVECE la parola non è polindroma, il messaggio sarà: la parola non è palindroma.
   } else {
-    resultElement.innerText = "PECCATO! la parola non è palindroma";
+    resultPalindroma.innerText = "PECCATO! la parola non è palindroma";
     parolaInversa = "";
   }
   console.log(parola);
