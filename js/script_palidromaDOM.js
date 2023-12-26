@@ -12,6 +12,8 @@ const resultPalindroma = document.getElementById("resultWord");
 buttonPalindroma.addEventListener("click", function () {
   let parola = parolaField.value.trim();
   console.log(parola);
+  parola = parola.toLowerCase();
+  console.log(parola);
   let i = parola.length - 1;
 
   while (i >= 0) {

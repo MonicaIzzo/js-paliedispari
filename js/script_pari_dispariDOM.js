@@ -21,7 +21,6 @@ function IsEven(number) {
 buttonPariDispari.addEventListener("click", function () {
   const number = parseInt(numberField.value);
   console.log(number);
-  const alternative = resultPariDispari.value;
 
   //# Validazione
   if (number > 5 || isNaN(number) || number < 1) {
